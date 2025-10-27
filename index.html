@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flower shop</title>
+    <!--links-->
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+    <link rel="shortcut icon" href="img/icons8-flowers-50.png" />
+    <script src="./script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!--Start header-->
+    <header>
+      <input type="checkbox" id="toggler" />
+      <label for="toggler" class="fas fa-bars"></label>
+      <img src="./img/moon.png" id="icon_mood" />
+      <a class="logo">FLOWERS <span>.</span></a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="icon">
+        <button class="basket">
+          basket(<span class="counter">(0)</span>)
+
+          <!--<a href="basket.html" class="fas fa-shopping-cart"></a>-->
+        </button>
+      </div>
+
+      <div class="digital_clock">
+        <h1 id="time">00:00:00</h1>
+        <p id="date">Loading...</p>
+      </div>
+    </header>
+
+    <!--End header-->
+    <!-- Start home section-->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h1>Fresh Flowers</h1>
+        <span>natural & beautifull flowers</span>
+        <p>
+          At our flower shop, we bring the beauty of nature into your home and
+          special moments. From fresh, fragrant blooms to custom bouquets for
+          any occasion, every arrangement is crafted with love and care. Fill
+          your life with color and joy—and give the gift of happiness.
+        </p>
+        <a href="#products" class="btn">Shop now</a>
+      </div>
+    </section>
+    <!-- End home section-->
+
+    <!-- start about section-->
+    <section class="about" id="about">
+      <h1 class="heading"><span>About</span> us</h1>
+      <div class="row">
+        <div class="video_container">
+          <video src="./video/video2.mp4" loop autoplay muted></video>
+          <h3>best flower sellers</h3>
+        </div>
+        <div class="content">
+          <h3>Why choose us?</h3>
+          <p>
+            At Flowers, we believe every bouquet tells a story. We are committed
+            to delivering fresh, high-quality flowers that bring joy and beauty
+            to every occasion.
+          </p>
+          <p>
+            With prompt delivery, exceptional customer service, and a passion
+            for floral artistry, we make every moment bloom.
+          </p>
+          <button id="open" class="btn">Learn more</button>
+        </div>
+      </div>
+
+      <div class="madal-contaner" id="madal-container">
+        <div class="madal">
+          <h1>Why choose us ?</h1>
+          <p>
+            At our flower shop, every bouquet tells its own story. We carefully
+            craft fresh, high-quality flowers to make your moments more
+            beautiful and joyful. With fast delivery, friendly service, and
+            expert floral artistry, we turn every occasion into a memorable one.
+          </p>
+          <button id="close">Close</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- End about section-->
+    <!-- start icon section-->
+    <section class="icon_contaner">
+      <div class="icon">
+        <img src="./img/selling.png" />
+        <div class="info">
+          <h3>Secure payment</h3>
+          <span>protected by paypal</span>
+        </div>
+      </div>
+      <div class="icon">
+        <img src="./img/truck-arrow-right.png" />
+        <div class="info">
+          <h3>free shipping</h3>
+          <span>on all orders</span>
+        </div>
+      </div>
+      <div class="icon">
+        <img src="./img/sack-dollar.png" />
+        <div class="info">
+          <h3>10 days returns</h3>
+          <span>moneyback Guarantee</span>
+        </div>
+      </div>
+      <div class="icon">
+        <img src="./img/hand-present.png" />
+        <div class="info">
+          <h3>offer and gift</h3>
+          <span>on all orders</span>
+        </div>
+      </div>
+    </section>
+    <!-- end icon section-->
+
+    <!--start section products-->
+    <section class="products" id="products">
+      <h1 class="heading"><span>Latest</span> products</h1>
+      <div class="filter-products">
+        <button id="all" class="filter-btn">All</button>
+        <button id="pot" class="filter-btn">Pots</button>
+        <button id="basket" class="filter-btn">basket</button>
+        <button id="bouquet" class="filter-btn">Bouquet</button>
+      </div>
+      <!-- در این div محصولات با JS ساخته می‌شن -->
+      <div class="box_container"></div>
+    </section>
+    <!-- end section products-->
+
+    <!--start customer review-->
+    <section class="review" id="review">
+      <h1 class="heading">customers <span>reveiew</span></h1>
+      <div class="box_container">
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            et voluptatem doloremque aliquam alias. In aut veniam perspiciatis?
+            Alias, iusto.
+          </p>
+          <div class="user">
+            <img src="./img/person1.jpg" />
+            <div class="user_info">
+              <h3>joen demo</h3>
+              <span>happy customer</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+        </div>
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            et voluptatem doloremque aliquam alias. In aut veniam perspiciatis?
+            Alias, iusto.
+          </p>
+          <div class="user">
+            <img src="./img/person2.jpg" />
+            <div class="user_info">
+              <h3>joen demo</h3>
+              <span>happy customer</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+        </div>
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            et voluptatem doloremque aliquam alias. In aut veniam perspiciatis?
+            Alias, iusto.
+          </p>
+          <div class="user">
+            <img src="./img/person3.jpg" />
+            <div class="user_info">
+              <h3>joen demo</h3>
+              <span>happy customer</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+        </div>
+      </div>
+    </section>
+    <!-- end customer review-->
+
+    <!--start contact section-->
+
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact </span>us</h1>
+      <div class="row">
+        <form action="">
+          <input type="text" placeholder="name" class="box" id="input_name" />
+          <input type="email" placeholder="email" class="box" />
+          <input type="number" placeholder="number" class="box" />
+          <textarea
+            class="box"
+            placeholder="message"
+            cols="30"
+            rows="10"></textarea>
+          <button type="button" class="btn" id="input_btn">send message</button>
+        </form>
+        <div class="image">
+          <img src="./img/contact-image.jpg" />
+        </div>
+      </div>
+    </section>
+    <!--end contact section-->
+
+    <!--footer section-->
+    <section class="footer">
+      <div class="box_container">
+        <div class="box">
+          <h3>quick link</h3>
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">products</a>
+          <a href="#">review</a>
+          <a href="#">contact</a>
+        </div>
+        <div class="box">
+          <h3>extra link</h3>
+          <a href="#">my account</a>
+          <a href="#">my favorite</a>
+          <a href="#">my order</a>
+        </div>
+        <div class="box">
+          <h3>location</h3>
+          <a href="#">italy</a>
+          <a href="#">usa</a>
+          <a href="#">france</a>
+        </div>
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#">+989121008060</a>
+          <a href="#">flowers.com</a>
+          <a href="#">paris-45</a>
+        </div>
+      </div>
+    </section>
+    <div class="last_footer"></div>
+  </body>
+</html>

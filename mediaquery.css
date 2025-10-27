@@ -1,0 +1,69 @@
+/* media query*/
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    padding: 2em;
+  }
+  section {
+    padding: 2rem;
+  }
+  .home {
+    background-color: #f4afc9;
+    background-image: none;
+  }
+}
+@media (max-width: 768px) {
+  header .fa-bars {
+    display: block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  /*قبلش ناوبر حذف و وقتی تیک میزنیم اون اینپوت که به فرم چک است بیاد ناوبر*/
+  header #toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: #ffff;
+    display: block;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+  .home .content h1 {
+    font-size: 5rem;
+    color: #333;
+  }
+  .home .content span {
+    font-size: 2.5rem;
+    color: var(--pink);
+  }
+  .icon_contaner .icon h3 {
+  color: #333;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+.icon_contaner .icon span {
+  color: #555;
+  font-size: 1.5rem;
+}
+
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+}
